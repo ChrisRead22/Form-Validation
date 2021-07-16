@@ -6,7 +6,7 @@ function Form() {
         <div>
         <FormSignup />
         </div>
-    )
-}
+    );
+};
 
 export default Form

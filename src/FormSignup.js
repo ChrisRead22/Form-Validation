@@ -2,10 +2,15 @@ import React from 'react'
 
 const FormSignup = () => {
     return (
-        <div>
-        <h1>Sign Up</h1>
+        <div className="form-content-right">
+        <form className="form">
+            <h1>Get started today! Create your account.</h1>
+            <div className="form-inputs">
+                
+            </div>
+        </form>
         </div>
-    )
-}
+    );
+};
 
 export default FormSignup
