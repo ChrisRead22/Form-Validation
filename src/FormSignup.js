@@ -9,7 +9,7 @@ const FormSignup = () => {
                 <label htmlFor="Username" 
                 className="form-label">
                     <input type="text" name="username"
-                    className="form-input" />
+                    className="form-input"/>
                 </label>
             </div>
         </form>
