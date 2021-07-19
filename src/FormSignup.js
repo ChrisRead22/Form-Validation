@@ -54,10 +54,13 @@ const FormSignup = () => {
                     type="password2" 
                     name="password2"
                     className="form-input" 
-                    placeholder="Enter your password2"
+                    placeholder="Confirm your password"
                 />
             </div>
-            <button classname="form-input"></button>
+            <button classname="form-input-btn">Sign Up</button>
+            <span classname="form-input-login">Already have an account? 
+            <a href="#">login here</a>
+            </span>
         </form>
         </div>
     );
