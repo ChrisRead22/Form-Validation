@@ -9,7 +9,9 @@ const FormSignup = () => {
                 <label htmlFor="Username" 
                 className="form-label">
                     <input type="text" name="username"
-                    className="form-input" />
+                    className="form-input" 
+                    placeholder="Enter username"
+                    />
                 </label>
             </div>
         </form>
