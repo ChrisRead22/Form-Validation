@@ -8,11 +8,25 @@ const FormSignup = () => {
             <div className="form-inputs">
                 <label htmlFor="Username" 
                 className="form-label">
-                    <input type="text" name="username"
+                    Username
+                </label>
+                <input 
+                    type="text" 
+                    name="username"
                     className="form-input" 
                     placeholder="Enter username"
-                    />
+                />
+            </div>
+            <div className="form-inputs">
+                <label htmlFor="email" 
+                className="form-label">
                 </label>
+                <input 
+                    type="email" 
+                    name="email"
+                    className="form-input" 
+                    placeholder="Enter your email"
+                />
             </div>
         </form>
         </div>
