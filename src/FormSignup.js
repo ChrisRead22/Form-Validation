@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
+import useForm from './useForm';
 
 const FormSignup = () => {
+    const {handleChange, values} = useForm();
+
+
     return (
         <div className="form-content-right">
         <form className="form">
