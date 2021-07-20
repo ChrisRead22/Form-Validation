@@ -18,6 +18,10 @@ const useForm = () => {
         })
     }
 
+    const handleSubmit = event => {
+        event.preventDefault();
+    };
+
     return {handleChange, values};
 }
 
