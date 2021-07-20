@@ -22,7 +22,7 @@ const useForm = () => {
         event.preventDefault();
     };
 
-    return {handleChange, values};
+    return {handleChange, values, handleSubmit};
 }
 
 export default useForm;
