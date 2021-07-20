@@ -11,9 +11,14 @@ const useForm = () => {
 
 
     const handleChange = event => {
+        const{ name, value} = event.target
         setValues({
         ...values,
-        event.target.name
+        [name]: value
         })
     }
+
+    return {handleChange}
 }
+
+export default useForm;
