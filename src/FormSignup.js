@@ -1,6 +1,7 @@
 import React from 'react';
 import useForm from './useForm';
 import validate from './validateInfo';
+import './Form.css';
 
 const FormSignup = () => {
     const {handleChange, values, handleSubmit, errors} = useForm(validate);
@@ -56,6 +57,7 @@ const FormSignup = () => {
                     value={values.password}
                     onChange={handleChange}
                 />
+                {errors.password && <p>{errors.password}</p>}
             </div>
             <div className="form-inputs">
                 <label htmlFor="password2" 
@@ -71,6 +73,7 @@ const FormSignup = () => {
                     value={values.password2}
                     onChange={handleChange}
                 />
+                {errors.password2 && <p>{errors.password2}</p>}
             </div>
             <button classname="form-input-btn">Sign Up</button>
             <span classname="form-input-login">Already have an account? 
