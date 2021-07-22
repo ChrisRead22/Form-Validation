@@ -40,6 +40,7 @@ const FormSignup = () => {
                     value={values.email}
                     onChange={handleChange}
                 />
+                {errors.email && <p>{errors.email}</p>}
             </div>
             <div className="form-inputs">
                 <label htmlFor="password" 
