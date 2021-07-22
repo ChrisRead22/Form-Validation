@@ -8,4 +8,10 @@ export default function validateInfo(values) {
     if(!values.email) {
         errors.email = "Email required"
     }
+
+    if(!values.password) {
+        errors.password = "Password is required"
+    }   else if (values.password.length < 6) {
+        errors.password = "Password needs to have 6 characters or more"
+    }
 }
