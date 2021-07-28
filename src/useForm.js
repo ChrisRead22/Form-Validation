@@ -8,17 +8,16 @@ const useForm = (callback, validate) => {
         password2: ''
     })
     const [errors, setErrors] = useState({})
-    const [isSubmitting, setIsSubmitting] = useState
-    (false)
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
 
     const handleChange = event => {
-        const{ name, value} = event.target
+        const{ name, value} = event.target;
         setValues({
         ...values,
         [name]: value
-        })
-    }
+        });
+    };
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -28,11 +27,13 @@ const useForm = (callback, validate) => {
     };
 
     useEffect(() => {
-        if(Object.keys(errors).length === 0 &&
+        if (Object.keys(errors).length === 0 &&
         isSubmitting) {
-            callback()
+            callback();
         }
-    })
+    },
+    [errors]
+    );
 
     return {handleChange, values, handleSubmit, errors};
 }
